@@ -1,6 +1,25 @@
+body {
+    background-color: rgb(234, 255, 255);
+}
+
+td {
+text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(81, 141, 141);
+}
+
 table, th, td {
-    border: 1px solid;
+    width: 50%;
     color:rgb(81, 141, 141);
     background-color: rgb(210, 233, 233);
 }
 
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

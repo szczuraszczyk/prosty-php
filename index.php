@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php
+  <div class="tabela">
+  <?php
     $db = new mysqli('localhost', 'root', '', 'biura_podrozy');
     $sql = "SELECT dataWyjazdu, cel, cena FROM wycieczki WHERE dostepna = 1";
     $result = $db->query($sql);
@@ -24,5 +25,6 @@ echo '</table>';
     }
     $db->close();
     ?>
+  </div> 
 </body>
 </html>
